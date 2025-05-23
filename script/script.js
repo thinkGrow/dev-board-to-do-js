@@ -1,25 +1,30 @@
-const btnComplete = document.getElementById("btn-complete");
+const btnComplete = document.getElementsByClassName("btn-complete");
 
-btnComplete.addEventListener("click", function (event) {
-  event.preventDefault();
-  btnComplete.disabled = true;
+for (let btn of btnComplete) {
+  btn.addEventListener("click", function (event) {
+    event.preventDefault();
+    btn.disabled = true;
 
-  let taskLeft = parseInt(getInnerTextById("task-left")) - 1;
-  setInnerTextByIDandValue("task-left", taskLeft);
+    let taskLeft = parseInt(getInnerTextById("task-left")) - 1;
+    setInnerTextByIDandValue("task-left", taskLeft);
 
-  let taskDone = parseInt(getInnerTextById("task-done")) + 1;
-  setInnerTextByIDandValue("task-done", taskDone);
+    let taskDone = parseInt(getInnerTextById("task-done")) + 1;
+    setInnerTextByIDandValue("task-done", taskDone);
 
-  const container = document.getElementById("activity-container");
+    const container = document.getElementById("activity-container");
 
-  const div = document.createElement("div");
-  tasktTitle = getInnerTextById("task-title");
+    const div = document.createElement("div");
+    const taskTitle = document.getElementsByClassName("task-title");
+    // console.log(taskTitle[1].innerText);
 
-  div.innerHTML = `
-                  <div class="bg-blue-200 rounded-lg p-2 mt-10">
-                    <p class="text-sm">You have completed the task: "${tasktTitle}" at 12:48:15 PM</p>
-                  </div>
-`;
+    for (let title of taskTitle) {
+      div.innerHTML = `
+                              <div class="bg-blue-200 rounded-lg p-2 mt-10">
+                                <p class="text-sm">You have completed the task: "${title.innerText}" at 12:48:15 PM</p>
+                              </div>
+            `;
 
-  container.appendChild(div);
-});
+      container.appendChild(div);
+    }
+  });
+}
