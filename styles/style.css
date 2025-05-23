@@ -1,15 +1,15 @@
+.custom-color-light {
+  color: #6c89d9;
+}
+
+.custom-color-light-bg {
+  background-color: #d4dfff;
+}
+
 .custom-color {
   color: #3752fd;
 }
 
 .custom-color-bg {
   background-color: #3752fd;
-}
-
-.custom-color-light {
-  color: #f4f7ff;
-}
-
-.custom-color-light-bg {
-  background-color: #f4f7ff;
 }
