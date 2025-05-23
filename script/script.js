@@ -2,12 +2,13 @@ const btnComplete = document.getElementById("btn-complete");
 
 btnComplete.addEventListener("click", function (event) {
   event.preventDefault();
+  btnComplete.disabled = true;
 
   let taskLeft = parseInt(getInnerTextById("task-left")) - 1;
-
   setInnerTextByIDandValue("task-left", taskLeft);
 
-  btnComplete.disabled = true;
+  let taskDone = parseInt(getInnerTextById("task-done")) + 1;
+  setInnerTextByIDandValue("task-done", taskDone);
 
   const container = document.getElementById("activity-container");
 
