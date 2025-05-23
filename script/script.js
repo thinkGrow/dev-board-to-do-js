@@ -3,6 +3,7 @@ const btnComplete = document.getElementsByClassName("btn-complete");
 for (let btn of btnComplete) {
   btn.addEventListener("click", function (event) {
     event.preventDefault();
+    alert("Board updated succesfully");
     btn.disabled = true;
 
     let taskLeft = parseInt(getInnerTextById("task-left")) - 1;
@@ -16,7 +17,6 @@ for (let btn of btnComplete) {
     // Get task title from the same card
     const taskCard = btn.closest(".task-card");
     const taskTitle = taskCard.querySelector(".task-title").innerText;
-  
 
     const div = document.createElement("div");
     div.innerHTML = `
@@ -28,3 +28,12 @@ for (let btn of btnComplete) {
     container.appendChild(div);
   });
 }
+
+const clearHistoryBtn = document.getElementById("clear-history-btn");
+
+clearHistoryBtn.addEventListener("click", function (event) {
+  event.preventDefault();
+  const container = document.getElementById("activity-container");
+  container.innerHTML = "";
+  alert("History cleared");
+});
