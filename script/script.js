@@ -28,7 +28,7 @@ for (let btn of btnComplete) {
     container.appendChild(div);
 
     if (taskLeft === 0) {
-      alert("Congratulations! You have completed all the assignedgi tasks!");
+      alert("Congratulations! You have completed all the assigned tasks!");
     }
   });
 }
