@@ -41,5 +41,5 @@ clearHistoryBtn.addEventListener("click", function (event) {
 const discoverButton = document.getElementById("discover-btn");
 
 discoverButton.addEventListener("click", function () {
-  window.location.href = "blog.html";
+  window.location.href = "./blog.html";
 });
