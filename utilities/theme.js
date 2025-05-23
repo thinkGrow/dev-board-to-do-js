@@ -1,4 +1,10 @@
-// Only add the event listener if the button exists (i.e. index.html)
+// apply saved background color if sessionStorage has it
+const savedColor = sessionStorage.getItem("selectedBackground");
+if (savedColor) {
+  document.body.style.backgroundColor = savedColor;
+}
+
+// button logic (only exists on index.html)
 const themeChangeButton = document.getElementById("theme-change-btn");
 if (themeChangeButton) {
   themeChangeButton.addEventListener("click", function (event) {
@@ -19,12 +25,7 @@ if (themeChangeButton) {
     const color = presetColors[Math.floor(Math.random() * presetColors.length)];
     document.body.style.backgroundColor = color;
 
-    localStorage.setItem("selectedBackground", color);
+    // save to sessionStorage (not persistent)
+    sessionStorage.setItem("selectedBackground", color);
   });
-}
-
-// Apply saved background color on all pages
-const savedColor = localStorage.getItem("selectedBackground");
-if (savedColor) {
-  document.body.style.backgroundColor = savedColor;
 }
