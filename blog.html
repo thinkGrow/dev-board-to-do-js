@@ -11,6 +11,24 @@
 </head>
 
 <body class="bg-gray-500 min-h-screen">
+
+    <header class="md:container mx-auto px-10">
+        <nav class="navbar bg-base-100 shadow-sm justify-between my-10 p-6 bg-white rounded-lg">
+
+            <div class="flex">
+                <img src="assets/logo.png" alt="">
+                <a class="btn btn-ghost text-xl">DevBoard</a>
+            </div>
+
+            <div>
+
+                <button id="route-home" class="btn-complete btn text-white bg-blue-500 h-full rounded-lg p-4">Back to
+                    Desk</button>
+
+            </div>
+        </nav>
+    </header>
+
     <div class="md:container mx-auto px-10 gap-4">
 
         <div class="flex justify-center">
@@ -78,15 +96,18 @@
                     <p>Event flows from child to parent</p>
                 </div>
             </div>
-            
+
             <!-- box 5 -->
             <div class="bg-white p-4">
-                <h1 class="font-bold text-xl"> Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                <h1 class="font-bold text-xl"> Question-5: How do you create, add, and remove elements using JavaScript?
+                </h1>
                 <br>
                 <hr>
                 <br>
                 <div class="text-gray-500">
-                    <p>Event flows from child to parent</p>
+                    <p>To create an element in JavaScript, you use a method to make a new tag (like a div or button).
+                        Then you can add it to the page by attaching it to an existing element. To remove it, you either
+                        directly remove the element or tell the parent to remove its child.</p>
                 </div>
             </div>
 
@@ -94,7 +115,7 @@
 
 
             <br>
-            
+
             <br>
 
         </div>
@@ -104,7 +125,7 @@
 
     </div>
 
-
+    <script src="./script/routing.js"></script>
 </body>
 
 </html>
