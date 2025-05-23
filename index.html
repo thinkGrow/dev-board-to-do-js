@@ -73,7 +73,6 @@
 
         <!-- section board -->
         <section id="board">
-
             <div class="md:container mx-auto px-10 flex gap-4">
                 <!-- left section -->
                 <section class="bg-white w-[80%] rounded-xl p-6">
@@ -88,7 +87,7 @@
                             <!-- text -->
                             <div>
                                 <p>Task assigned</p>
-                                <h3 class="text-4xl">23</h3>
+                                <h3 id="task-left" class="text-4xl">5</h3>
                             </div>
                         </div>
                         <div
@@ -133,7 +132,8 @@
                                     <h4 class="font-bold text-xl">21 March 2025</h4>
                                 </div>
 
-                                <button class="btn text-white bg-blue-500 w-[40%] h-full rounded-lg">Completed</button>
+                                <button id="btn-complete"
+                                    class="btn text-white bg-blue-500 w-[40%] h-full rounded-lg disabled:bg-gray-400 disabled:cursor-not-allowed">Completed</button>
 
                             </div>
                         </div>
@@ -279,10 +279,15 @@
             </div>
         </section>
 
-        <!-- section activity log -->
-        <section></section>
+
+
 
     </main>
+
+    <script src="./utilities/utilities.js"></script>
+    <script src="./utilities/toggle.js"></script>
+    <script src="./script/script.js"></script>
+
 </body>
 
 </html>
