@@ -33,7 +33,7 @@
     </style>
 </head>
 
-<body class="bg-blue-500 py-10">
+<body id="colors-container" class="bg-blue-500 py-10">
     <header class="md:container mx-auto px-10">
         <nav class="navbar bg-base-100 shadow-sm justify-between my-10 p-6 bg-white rounded-lg">
 
@@ -58,7 +58,7 @@
 
                 <!-- theme change -->
                 <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                    <div class="w-10 rounded-full">
+                    <div id="theme-change-btn" class="w-10 rounded-full">
                         <img alt="Tailwind CSS Navbar component"
                             src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
                     </div>
@@ -104,9 +104,9 @@
                                 <i class="fi fi-sr-checkbox p-2 h-[80%]"></i>
                             </div>
                             <!-- text -->
-                            <div class="">
-                                <div class="text-3xl">Wed, </div>
-                                <div class="text-2xl">May 20, 2025</div>
+                            <div>
+                                <p id="day-name" class="text-3xl"></p>
+                                <p id="date-rest" class="text-2xl"></p>
                             </div>
                         </div>
 
@@ -130,7 +130,7 @@
                             <div class="flex justify-between">
                                 <div>
                                     <h5>Deadline</h5>
-                                    <h4 class="font-bold text-xl">21 March 2025</h4>
+                                    <h4 class="font-bold text-xl">21 March 2026</h4>
                                 </div>
 
                                 <button
@@ -153,7 +153,7 @@
                             <div class="flex justify-between">
                                 <div>
                                     <h5>Deadline</h5>
-                                    <h4 class="font-bold text-xl">21 March 2025</h4>
+                                    <h4 class="font-bold text-xl">21 March 2026</h4>
                                 </div>
 
                                 <button
@@ -177,7 +177,7 @@
                             <div class="flex justify-between">
                                 <div>
                                     <h5>Deadline</h5>
-                                    <h4 class="font-bold text-xl">21 March 2025</h4>
+                                    <h4 class="font-bold text-xl">21 March 2026</h4>
                                 </div>
 
                                 <button
@@ -201,7 +201,7 @@
                             <div class="flex justify-between">
                                 <div>
                                     <h5>Deadline</h5>
-                                    <h4 class="font-bold text-xl">21 March 2025</h4>
+                                    <h4 class="font-bold text-xl">21 March 2026</h4>
                                 </div>
 
                                 <button
@@ -225,7 +225,7 @@
                             <div class="flex justify-between">
                                 <div>
                                     <h5>Deadline</h5>
-                                    <h4 class="font-bold text-xl">21 March 2025</h4>
+                                    <h4 class="font-bold text-xl">21 March 2026</h4>
                                 </div>
 
                                 <button
@@ -249,7 +249,7 @@
                             <div class="flex justify-between">
                                 <div>
                                     <h5>Deadline</h5>
-                                    <h4 class="font-bold text-xl">21 March 2025</h4>
+                                    <h4 class="font-bold text-xl">21 March 2026</h4>
                                 </div>
 
                                 <button
@@ -295,6 +295,7 @@
     <script src="./utilities/utilities.js"></script>
     <script src="./utilities/toggle.js"></script>
     <script src="./script/script.js"></script>
+    <script src="./utilities/theme.js"></script>
     <script src="./utilities/routing.js"></script>
 
 
