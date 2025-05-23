@@ -37,3 +37,9 @@ clearHistoryBtn.addEventListener("click", function (event) {
   container.innerHTML = "";
   alert("History cleared");
 });
+
+const discoverButton = document.getElementById("discover-btn");
+
+discoverButton.addEventListener("click", function () {
+  window.location.href = "blog.html";
+});
