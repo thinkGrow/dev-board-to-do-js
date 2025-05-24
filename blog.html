@@ -7,24 +7,28 @@
     <title>DevBoard - Blogs</title>
     <!-- daisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!--load all styles -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"> </script>
+    <!-- load all styles -->
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<body id="colors-container" class="custom-color-light-bg min-h-screen">
+
+
+<body id="colors-container" class="custom-color-light-bg min-h-screen py-10 my-0">
 
     <header class="md:container mx-auto px-10">
-        <nav class="navbar bg-base-100 shadow-sm justify-between my-10 p-6 bg-white rounded-lg">
+        <nav class="navbar bg-base-100 shadow-sm justify-between mb-10 px-6 bg-white rounded-lg
+         h-[10vh]">
 
             <div class="flex">
                 <img src="assets/logo.png" alt="">
-                <a class="btn btn-ghost text-xl">DevBoard</a>
+                <h3 class="btn btn-ghost text-4xl">DevBoard</h3>
             </div>
 
             <div>
 
-                <button id="route-home" class="btn-complete btn text-white bg-blue-500 h-full rounded-lg p-4">Back to
+                <button id="route-home" class="btn-complete btn text-white custom-color-bg h-full rounded-lg p-4">Back
+                    to
                     Desk</button>
 
             </div>
@@ -34,7 +38,7 @@
     <div class="md:container mx-auto px-10 gap-4">
 
         <div class="flex justify-center">
-            <h1 class="text-4xl font-bold p-10">Blogs</h1>
+            <h1 class="text-4xl font-bold px-10 pb-10">Blogs</h1>
         </div>
 
         <!-- Boxes -->

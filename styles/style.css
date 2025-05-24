@@ -13,3 +13,8 @@
 .custom-color-bg {
   background-color: #3752fd;
 }
+
+
+.gradient-bg{
+    background-image: linear-gradient(to right, #d4dfff, #3752fd);
+}
